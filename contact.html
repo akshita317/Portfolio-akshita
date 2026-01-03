@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Akshita Kumari</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;AK/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="experience.html" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="particles-bg" id="particles-js"></div>
+        
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">
+                    <span class="title-bracket">&lt;</span>
+                    Get In Touch
+                    <span class="title-bracket">/&gt;</span>
+                </h1>
+                <p class="page-subtitle">Let's collaborate and build something amazing together</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <div class="form-header">
+                            <h2 class="form-title">
+                                <i class="fas fa-terminal"></i>
+                                Send Message
+                            </h2>
+                            <p class="form-subtitle">Drop me a line and I'll get back to you as soon as possible</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    <i class="fas fa-user"></i>
+                                    Name *
+                                </label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i>
+                                    Email *
+                                </label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">
+                                    <i class="fas fa-tag"></i>
+                                    Subject *
+                                </label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="collaboration">Project Collaboration</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="freelance">Freelance Work</option>
+                                    <option value="consultation">Technical Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    <i class="fas fa-comment"></i>
+                                    Message *
+                                </label>
+                                <textarea id="message" name="message" class="form-input form-textarea" rows="6" required></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                                <div class="btn-loader" id="btnLoader">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                            </button>
+                        </form>
+
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <div class="contact-card">
+                            <h3 class="card-title">
+                                <i class="fas fa-address-card"></i>
+                                Contact Information
+                            </h3>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:akshitasingh3027@gmail.com">akshitasingh3027@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918507420632">+91 8507420632</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <span>India</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Response Time</h4>
+                                    <span>Within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-card">
+                            <h3 class="card-title">
+                                <i class="fas fa-share-alt"></i>
+                                Connect With Me
+                            </h3>
+                            
+                            <div class="social-grid">
+                                <a href="https://github.com/akshita317" target="_blank" class="social-item">
+                                    <div class="social-icon github">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="social-info">
+                                        <h4>GitHub</h4>
+                                        <span>@akshita317</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/akshitakumari317/" target="_blank" class="social-item">
+                                    <div class="social-icon linkedin">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="social-info">
+                                        <h4>LinkedIn</h4>
+                                        <span>Akshita Kumari</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://leetcode.com/u/akshitakumari731/" target="_blank" class="social-item">
+                                    <div class="social-icon leetcode">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="social-info">
+                                        <h4>LeetCode</h4>
+                                        <span>@akshitakumari731</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="availability-card">
+                            <h3 class="card-title">
+                                <i class="fas fa-calendar-check"></i>
+                                Availability Status
+                            </h3>
+                            
+                            <div class="status-indicator">
+                                <div class="status-dot available"></div>
+                                <span class="status-text">Available for new opportunities</span>
+                            </div>
+
+                            <div class="availability-info">
+                                <div class="availability-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Open to full-time positions</span>
+                                </div>
+                                <div class="availability-item">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Available for freelance projects</span>
+                                </div>
+                                <div class="availability-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Open to collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-preferences">
+                            <h3 class="card-title">
+                                <i class="fas fa-heart"></i>
+                                Preferred Technologies
+                            </h3>
+                            
+                            <div class="tech-grid">
+                                <span class="tech-item python">Python</span>
+                                <span class="tech-item java">Java</span>
+                                <span class="tech-item nodejs">Node.js</span>
+                                <span class="tech-item postgresql">PostgreSQL</span>
+                                <span class="tech-item mongodb">MongoDB</span>
+                                <span class="tech-item docker">Docker</span>
+                                <span class="tech-item linux">Linux</span>
+                                <span class="tech-item git">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start a Project?</h2>
+                    <p class="cta-text">
+                        I'm always excited to work on interesting projects and solve challenging problems. 
+                        Let's discuss how we can bring your ideas to life!
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contactForm" class="cta-btn primary">
+                            <i class="fas fa-rocket"></i>
+                            Start a Project
+                        </a>
+                        <a href="../assets/Akshita_Resume.pdf" download class="cta-btn secondary">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../js/particles-config.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
